@@ -8,7 +8,7 @@ export default function Footer({}: Props) {
     <footer className="bg-white lg:grid lg:grid-cols-5">
     <div className="relative block h-32 lg:col-span-2 lg:h-full">
       <Image
-        src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+        src="https://www.azcareservicesllc.com/wp-content/themes/azcarema718/images/footer-logo.png"
         alt=""
         width={200}
         height={100}
