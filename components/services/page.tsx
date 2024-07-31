@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Service: React.FC = () => {
     return (
-        <section className="py-16 bg-[#339FB1]">
+        <section className="py-16 ">
             <div className="text-center mb-12">
                 <h2 className="text-4xl font-bold text-white">
                     OUR SERVICES
@@ -17,7 +17,7 @@ const Service: React.FC = () => {
                 {cardData.map((card, index) => (
                     <div
                         key={index}
-                        className="relative flex flex-col  rounded-lg  h-[450px] transition-transform transform hover:scale-105 hover:shadow-xl"
+                        className="relative flex flex-col overflow-hidden  rounded-lg  h-[450px] transition-transform transform hover:scale-105 hover:shadow-xl"
                     >
                         <div className="absolute inset-0">
                             <Image
@@ -25,12 +25,12 @@ const Service: React.FC = () => {
                                 alt={card.title}
                                 layout="fill"
                                 objectFit="cover"
-                                className="w-full h-full object-cover opacity-70"
+                                className="w-full h-full object-cover"
 
                             />
                         </div>
 
-                        <div className="mt-[170px] relative p-6 flex flex-col justify-between h-full bg-gradient-to-t from-black/40 to-transparent">
+                        <div className="mt-[170px] relative p-6 flex flex-col justify-between h-full bg-gradient-to-t from-black/40 to-transparent bg-black opacity-40 hover:opacity-90">
                             <div>
                                 <h3 className="text-sm font-medium uppercase tracking-widest text-white">{card.title}</h3>
                                 <p className="mt-2 text-lg font-semibold text-white">{card.title}</p>

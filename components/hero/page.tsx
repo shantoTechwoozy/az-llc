@@ -37,7 +37,7 @@ const Hero = () => {
         <section className="relative w-full h-[75vh] overflow-hidden bg-black">
             <Swiper
                 modules={[Autoplay, Pagination]}
-                spaceBetween={30}
+                spaceBetween={0}  
                 slidesPerView={1}
                 autoplay={{ delay: 8000, disableOnInteraction: false }}
                 speed={2500}
@@ -46,7 +46,7 @@ const Hero = () => {
                 className="h-full"
             >
                 {slides.map((slide, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} className="!p-0"> {/* Ensure no padding */}
                         <div
                             className="absolute inset-0 bg-cover bg-center"
                             style={{ backgroundImage: `url(${slide.image})` }}
