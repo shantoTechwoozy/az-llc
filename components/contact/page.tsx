@@ -7,8 +7,8 @@ const ContactUs = () => {
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-8 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2">
-                    <div className="relative p-6 bg-[url('/contact/contact.jpg')] bg-cover bg-center bg-no-repeat sm:rounded-lg h-96 md:h-[400px] lg:h-[500px] xl:h-[600px]">
-                    </div>
+                        <div className="relative p-6 bg-[url('/contact/contact.jpg')] bg-cover bg-center bg-no-repeat sm:rounded-lg h-96 md:h-[400px] lg:h-[500px] xl:h-[600px]">
+                        </div>
 
                         <form action="https://fabform.io/f/xxxxx" method="post" className="p-5 flex flex-col justify-center">
                             <div className="flex flex-col mb-4">

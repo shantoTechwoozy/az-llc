@@ -21,7 +21,7 @@ const Service: React.FC = () => {
                 {cardData.map((card, index) => (
                     <div
                         key={index}
-                        className="relative flex flex-col overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-red-500 ring-opacity-40 max-w-sm transition-transform transform hover:scale-105 hover:shadow-xl"
+                        className="relative flex flex-col overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-green-300 ring-opacity-40 max-w-sm transition-transform transform hover:scale-105 hover:shadow-xl"
                     >
                         <div className="relative w-full h-[200px] sm:h-[250px]">
                             <Image
