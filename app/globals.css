@@ -124,3 +124,6 @@
 .fadeInUp {
   animation: fadeInUp 2.5s ease-out;
 }
+button {
+  cursor: pointer;
+}

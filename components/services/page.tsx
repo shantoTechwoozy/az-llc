@@ -6,61 +6,45 @@ import Image from 'next/image';
 
 const Service: React.FC = () => {
     return (
-        <section className="py-16 ">
-            <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-white">
-                    OUR SERVICES
-                </h2>
+        <section className="py-16">
+            <div className="text-center space-y-4 mb-5 px-4">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-400">WHAT WE DO</h2>
+                <p className="text-2xl sm:text-4xl lg:text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-blue-500 to-blue-600">
+                    Services We Offer
+                </p>
+                <p className="text-gray-600">
+                    Comprehensive home care solutions tailored to your needs because your well-being matters most.
+                </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
                 {cardData.map((card, index) => (
                     <div
                         key={index}
-                        className="relative flex flex-col overflow-hidden  rounded-lg  h-[450px] transition-transform transform hover:scale-105 hover:shadow-xl"
+                        className="relative flex flex-col overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-red-500 ring-opacity-40 max-w-sm transition-transform transform hover:scale-105 hover:shadow-xl"
                     >
-                        <div className="absolute inset-0">
+                        <div className="relative w-full h-[200px] sm:h-[250px]">
                             <Image
                                 src={card.imagePath}
                                 alt={card.title}
                                 layout="fill"
                                 objectFit="cover"
-                                className="w-full h-full object-cover"
-
+                                className="w-full h-full"
                             />
                         </div>
 
-                        <div className="mt-[170px] relative p-6 flex flex-col justify-between h-full bg-gradient-to-t from-black/40 to-transparent bg-black opacity-40 hover:opacity-90">
+                        <div className="flex flex-col justify-between flex-grow p-4">
                             <div>
-                                <h3 className="text-sm font-medium uppercase tracking-widest text-white">{card.title}</h3>
-                                <p className="mt-2 text-lg font-semibold text-white">{card.title}</p>
-                                <p className="mt-4 text-sm text-white">{card.description}</p>
+                                <h3 className="text-sm sm:text-lg font-medium mb-2">{card.title}</h3>
+                                <p className="text-gray-600 text-xs sm:text-sm mb-4">{card.description}</p>
                             </div>
 
                             <a
-                                className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-white focus:outline-none focus:ring active:text-indigo-500"
+                                className="bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded self-end text-xs sm:text-sm"
                                 href="#"
                             >
-                                <span className="absolute -start-full transition-all group-hover:start-4">
-                                    <svg
-                                        className="size-5 rtl:rotate-180"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                                        />
-                                    </svg>
-                                </span>
-
-                                <span className="text-sm font-medium transition-all group-hover:ms-4"> {card.buttonText} </span>
+                                {card.buttonText}
                             </a>
-
                         </div>
                     </div>
                 ))}

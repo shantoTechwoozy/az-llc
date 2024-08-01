@@ -8,9 +8,9 @@ const GetStarted: React.FC = () => {
         <section className="bg-zinc-50 overflow-hidden py-12 lg:py-24">
             <div className="max-w-screen-xl 2xl:max-w-screen-3xl px-8 md:px-12 mx-auto space-y-24">
                 {/* Section Header */}
-                <div className="text-center space-y-4">
-                    <h2 className="text-3xl font-bold text-gray-900">START WITH US TODAY</h2>
-                    <p className="text-xl font-semibold text-gray-800">Let&apos; Get Started</p>
+                <div className="text-center space-y-4 mb-5">
+                    <h2 className="text-2xl lg:text-2xl font-bold text-gray-400">START WITH US TODAY</h2>
+                    <p className="text-2xl lg:text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-blue-500 to-blue-600">Let&apos; Get Started</p>
                     <p className="text-gray-600">
                         Ready to begin your journey with us? Let&apos;s get started on your personalized care plan today!
                     </p>
@@ -47,7 +47,7 @@ const GetStarted: React.FC = () => {
                     {/* Card 4: Client Satisfaction */}
                     <div className="relative flex-1 bg-white rounded-xl shadow-lg p-6 flex flex-col items-center space-y-4 transition-transform transform hover:scale-110 hover:rotate-3 hover:-translate-y-6 duration-500 ease-in-out">
                         <FaStar className="text-4xl text-yellow-500 transition-transform transform hover:scale-125 duration-500 ease-in-out" />
-                        <h3 className="text-xl font-semibold text-gray-800">Client Satisfaction Survey</h3>
+                        <h3 className="text-xl text-center font-semibold text-gray-800">Client Satisfaction Survey</h3>
                         <p className="text-center text-gray-600">
                             Share your experience, and help us improve for your continued happiness and well-being.
                         </p>
