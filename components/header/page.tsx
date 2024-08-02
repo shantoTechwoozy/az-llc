@@ -1,76 +1,143 @@
-'use client';
-import Link from "next/link";
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import Image from "next/image";
+"use client";
+import React, { useState } from 'react';
+import { ClerkLoaded, SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/nextjs';
+import Image from 'next/image';
 
-const Menu = () => {
-    const [nav, setNav] = useState(false);
+const Header: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const links = [
-      { id: 1, link: "home", label: "Home" },
-      { id: 2, link: "about", label: "About Us" },
-      { id: 3, link: "services", label: "Services" },
-      { id: 4, link: "careers", label: "Careers" },
-      { id: 5, link: "resources", label: "Resources" },
-      { id: 6, link: "contact", label: "Contact Us" },
-    ];
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(prev => !prev);
+  };
 
-    return (
-        <div className="flex justify-between items-center w-full h-20 px-4 bg-white fixed top-0 left-0 z-50">
-            <div>
-                <h1 className="text-5xl font-signature ml-2">
-                    <a
-                        className="link-underline link-underline-black text-black"
-                        href=""
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <Image
-                            src="/header/logo.png"
-                            alt="logo"
-                            width={160} // Adjust width for better visibility
-                            height={60} // Maintain height for aspect ratio
-                            className="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-24 h-auto mt-5 mb-2"
-                        />
-                    </a>
-                </h1>
+  return (
+    <header className="bg-white shadow-md sticky-header p-5">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          <div className="flex-1 md:flex md:items-center md:gap-12">
+            <a className="block text-gray-900" href="/">
+              <Image
+                src={`/header/logo.png`}
+                alt="logo"
+                width={240}
+                height={60}
+                className="w-[50px] sm:w-48 md:w-64 lg:w-[100px]"
+              />
+            </a>
+          </div>
+
+          <div className="md:flex md:items-center md:gap-12">
+            <nav aria-label="Global" className="hidden md:block">
+              <ul className="flex items-center gap-6 text-sm">
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/"> Home </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/services"> Services </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/projects"> Projects </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/contact"> Contact </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div className="flex items-center gap-4">
+              <div className="sm:flex sm:gap-4">
+                <ClerkLoaded>
+                  <SignedIn>
+                    <UserButton />
+                  </SignedIn>
+                  <SignedOut>
+                    <SignInButton mode="modal">
+                      <a
+                        className="rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-blue-700"
+                        href="#"
+                      >
+                        Login
+                      </a>
+                    </SignInButton>
+                  </SignedOut>
+                </ClerkLoaded>
+              </div>
+              <div className="block md:hidden">
+                <button
+                  onClick={toggleMobileMenu}
+                  className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-700"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
             </div>
-
-            <ul className="hidden md:flex">
-                {links.map(({ id, link }) => (
-                    <li
-                        key={id}
-                        className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-black duration-200 link-underline"
-                    >
-                        <Link href={`#${link}`}>{link}</Link>
-                    </li>
-                ))}
-            </ul>
-
-            <div
-                onClick={() => setNav(!nav)}
-                className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
-            >
-                {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-            </div>
-
-            {nav && (
-                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-                    {links.map(({ id, link }) => (
-                        <li
-                            key={id}
-                            className="px-4 cursor-pointer capitalize py-6 text-4xl"
-                        >
-                            <Link onClick={() => setNav(!nav)} href={`#${link}`}>
-                                {link}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            )}
+          </div>
         </div>
-    );
+      </div>
+
+      <div
+        className={`fixed inset-0 z-50 bg-white p-6 shadow-lg transition-transform transform ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      >
+        <button
+          onClick={toggleMobileMenu}
+          className="text-gray-600 hover:text-gray-700"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <nav aria-label="Mobile" className="mt-6">
+          <ul className="space-y-4">
+            <li>
+              <a className="text-gray-700 hover:text-gray-900" href="/"> Home </a>
+            </li>
+            <li>
+              <a className="text-gray-700 hover:text-gray-900" href="/services"> Services </a>
+            </li>
+            <li>
+              <a className="text-gray-700 hover:text-gray-900" href="/projects"> Projects </a>
+            </li>
+            <li>
+              <a className="text-gray-700 hover:text-gray-900" href="/contact"> Contact </a>
+            </li>
+            <li>
+              <ClerkLoaded>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
+                <SignedOut>
+                  <SignInButton mode="modal">
+                    <a
+                      className="block rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow transition hover:bg-blue-700"
+                      href="#"
+                    >
+                      Login
+                    </a>
+                  </SignInButton>
+                </SignedOut>
+              </ClerkLoaded>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 };
 
-export default Menu;
+export default Header;

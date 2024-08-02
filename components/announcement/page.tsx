@@ -5,7 +5,7 @@ type Props = {};
 
 export default function Announcement({ }: Props) {
     return (
-        <div className="bg-[#339FB1] w-full overflow-hidden relative mt-24 p-5">
+        <div className="bg-[#339FB1] w-full overflow-hidden relative p-5">
             <div className="justify-between whitespace-nowrap animate-marquee flex items-center text-glow">
                 <div className="flex items-center mr-8">
                     <FaPhoneAlt className="mr-2" />
