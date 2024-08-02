@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-md sticky-header p-5">
+    <header className="bg-white shadow-md sticky-header lg:p-5">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
