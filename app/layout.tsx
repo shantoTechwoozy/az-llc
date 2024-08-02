@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import Footer from "@/components/footer/page";
 import Header from "@/components/header/page";
-
+import CookieConsent from "@/components/Cookies/page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,6 +22,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );

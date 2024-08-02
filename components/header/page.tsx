@@ -27,11 +27,11 @@ const Menu = () => {
                         rel="noreferrer"
                     >
                         <Image
-                            src="/logo.png"
+                            src="/header/logo.png"
                             alt="logo"
-                            width={220}
-                            height={60}
-                            className="w-24 sm:w-32 md:w-48 lg:w-56 xl:w-64 h-auto header-logo"
+                            width={160} // Adjust width for better visibility
+                            height={60} // Maintain height for aspect ratio
+                            className="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-24 h-auto mt-5 mb-2"
                         />
                     </a>
                 </h1>
