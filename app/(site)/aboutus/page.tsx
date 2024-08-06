@@ -32,7 +32,7 @@ const About: React.FC = () => {
         <section className="mb-12 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">Who We Are</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            AZ Transportation and Care Services LLC is more than just a care provider; we are a lifeline of support, a source of comfort, and a promise of exceptional care. When you choose us, you choose a brighter, more compassionate future for your loved one. Thank you for considering AZ Transportation and Care Services LLC! We look forward to being a part of your loved one's journey and making every moment count.
+            AZ Transportation and Care Services LLC is more than just a care provider; we are a lifeline of support, a source of comfort, and a promise of exceptional care. When you choose us, you choose a brighter, more compassionate future for your loved one. Thank you for considering AZ Transportation and Care Services LLC! We look forward to being a part of your loved one&apos;s journey and making every moment count.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div className="relative w-full h-40 overflow-hidden rounded-lg shadow-lg">
@@ -55,7 +55,7 @@ const About: React.FC = () => {
           <div className="bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 p-8 rounded-lg shadow-lg mb-6">
             <h2 className="text-4xl font-bold text-white">Our Mission Statement</h2>
             <p className="text-lg text-gray-100 leading-relaxed mt-4">
-              At AZ Transportation and Care Services LLC, our mission is to enhance your loved one's life with genuine care, respect, and unwavering dedication, enriching every home we touch. Every day, our compassionate caregivers strive to create moments of joy and promote a life of fulfillment for your loved ones. We believe that our mission is more than just a statement; it's a promise we keep with every action we take.
+              At AZ Transportation and Care Services LLC, our mission is to enhance your loved one&apos;s life with genuine care, respect, and unwavering dedication, enriching every home we touch. Every day, our compassionate caregivers strive to create moments of joy and promote a life of fulfillment for your loved ones. We believe that our mission is more than just a statement; it&apos;s a promise we keep with every action we take.
             </p>
           </div>
         </section>
@@ -65,7 +65,7 @@ const About: React.FC = () => {
           <div className="bg-gradient-to-r from-green-400 via-blue-500 to-blue-600 p-8 rounded-lg shadow-lg mb-6">
             <h2 className="text-4xl font-bold text-white">Bringing Bright Futures</h2>
             <p className="text-lg text-gray-100 leading-relaxed mt-4">
-              At AZ Transportation and Care Services LLC, our vision is a future where every individual experiences the warmth of compassionate and personalized care within the familiar embrace of their own home. We envision a world where aging gracefully isn't defined by limitations but by the limitless potential for joy, comfort, and fulfillment. Our commitment to this vision is unwavering. We see a world where our caregivers are not just providers but trusted companions, where every task, every smile, and every moment of companionship contribute to a life enriched and cherished. With our hearts and hands, we strive to make this vision a reality, one home at a time.
+              At AZ Transportation and Care Services LLC, our vision is a future where every individual experiences the warmth of compassionate and personalized care within the familiar embrace of their own home. We envision a world where aging gracefully isn&apos;t defined by limitations but by the limitless potential for joy, comfort, and fulfillment. Our commitment to this vision is unwavering. We see a world where our caregivers are not just providers but trusted companions, where every task, every smile, and every moment of companionship contribute to a life enriched and cherished. With our hearts and hands, we strive to make this vision a reality, one home at a time.
             </p>
           </div>
         </section>
@@ -74,7 +74,7 @@ const About: React.FC = () => {
         <section className="mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">Why Choose Us</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            At AZ Transportation and Care Services LLC, we stand out with unwavering commitment. Our compassionate caregivers, personalized care plans, and dedication to your loved one's well-being make us the trusted choice for exceptional home care services in Antioch, California.
+            At AZ Transportation and Care Services LLC, we stand out with unwavering commitment. Our compassionate caregivers, personalized care plans, and dedication to your loved one&apos;s well-being make us the trusted choice for exceptional home care services in Antioch, California.
           </p>
         </section>
 
