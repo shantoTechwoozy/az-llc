@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white shadow-md sticky-header lg:p-5">
+    <header className="bg-white shadow-md sticky-header lg:p-5 md:p-2 ">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
                 alt="logo"
                 width={240}
                 height={60}
-                className="w-[50px] sm:w-48 md:w-64 lg:w-[100px]"
+                className="w-[50px] xl:w-24 sm:w-48 md:w-24 lg:w-[100px]"
               />
             </a>
           </div>

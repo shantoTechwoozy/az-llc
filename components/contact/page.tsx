@@ -3,7 +3,7 @@ import React from 'react';
 
 const ContactUs = () => {
     return (
-        <div className="relative flex items-top justify-center h-auto bg-white dark:bg-gray-900 sm:items-center">
+        <div className="mt-8 mb-8 relative flex items-top justify-center h-auto bg-white dark:bg-gray-900 sm:items-center">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div className="mt-2 overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2">
