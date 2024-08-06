@@ -10,7 +10,7 @@ interface CardData {
 const cardData: CardData[] = [
     {
         title: "Companionship",
-        description: "Warm companionship to brighten your loved one's day, always by their side",
+        description: "Warm companionship to brighten your loved one&apos;s day, always by their side",
         buttonText: "Click Here",
         imagePath: "https://www.ophealthservices.com/wp-content/uploads/2020/10/Health-Care-Worker-and-Elderly-1024x682.jpg", // Replace with your image path
     },
