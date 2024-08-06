@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FaBriefcase, FaMapMarkerAlt, FaEnvelope, FaPhone, FaArrowRight, FaCheckCircle } from 'react-icons/fa';
 import Image from 'next/image';
 import Announcement from '@/components/announcement/page';
+
 const Career: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -38,26 +39,28 @@ const Career: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6 md:p-12">
-      <Announcement/>
+      <Announcement />
       {/* Banner Section */}
       <div className="relative w-full h-64 md:h-80 overflow-hidden">
         <Image
           src="/career/career.jpg"
-          alt="Resources Banner"
+          alt="Career Banner"
           layout="fill"
           objectFit="cover"
           className="absolute inset-0"
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
-        <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4 text-white">Join Our Team!</h1>
-          <p className="text-lg mb-8 text-white">Explore career opportunities at AZ Transportation and Care Services LLC. We are committed to providing excellent care and are always looking for dedicated professionals to join our team.</p>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white">
+            Join Our Team!
+          </h1>
+          <p className="text-sm md:text-lg mb-8 text-white">
+            Explore career opportunities at AZ Transportation and Care Services LLC. We are committed to providing excellent care and are always looking for dedicated professionals to join our team.
+          </p>
           <a href="#apply-now" className="bg-white text-blue-500 px-4 py-2 rounded-lg shadow-md hover:bg-gray-100 inline-flex items-center">
             Apply Now <FaArrowRight className="ml-2" />
           </a>
-        </div>
         </div>
       </div>
 
@@ -85,58 +88,41 @@ const Career: React.FC = () => {
             Current Openings
           </h2>
           <div className="space-y-6">
-            <div className="bg-gray-50 p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Home Care Aide</h3>
-              <p className="text-gray-600 mb-2">
-                We are seeking a compassionate Home Care Aide to provide exceptional care and support to our clients in their homes. Responsibilities include assisting with daily living activities, medication reminders, and providing emotional support.
-              </p>
-              <p className="text-gray-600 mb-2 flex items-center">
-                <FaMapMarkerAlt className="w-5 h-5 text-green-500 mr-2" />
-                Antioch, CA
-              </p>
-              <a href="#" className="text-blue-500 hover:underline flex items-center">
-                Apply Now <FaArrowRight className="ml-2" />
-              </a>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Personal Care Assistant</h3>
-              <p className="text-gray-600 mb-2">
-                We are looking for a dedicated Personal Care Assistant to support our clients with their personal care needs. Duties include helping with grooming, bathing, and providing companionship.
-              </p>
-              <p className="text-gray-600 mb-2 flex items-center">
-                <FaMapMarkerAlt className="w-5 h-5 text-green-500 mr-2" />
-                Antioch, CA
-              </p>
-              <a href="#" className="text-blue-500 hover:underline flex items-center">
-                Apply Now <FaArrowRight className="ml-2" />
-              </a>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Care Coordinator</h3>
-              <p className="text-gray-600 mb-2">
-                We are seeking a Care Coordinator to manage care plans and ensure our clients receive the highest quality of care. Responsibilities include coordinating care services, managing schedules, and communicating with clients and their families.
-              </p>
-              <p className="text-gray-600 mb-2 flex items-center">
-                <FaMapMarkerAlt className="w-5 h-5 text-green-500 mr-2" />
-                Antioch, CA
-              </p>
-              <a href="#" className="text-blue-500 hover:underline flex items-center">
-                Apply Now <FaArrowRight className="ml-2" />
-              </a>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Administrative Assistant</h3>
-              <p className="text-gray-600 mb-2">
-                We are looking for an Administrative Assistant to support our office operations. Duties include handling communications, scheduling, and assisting with various administrative tasks.
-              </p>
-              <p className="text-gray-600 mb-2 flex items-center">
-                <FaMapMarkerAlt className="w-5 h-5 text-green-500 mr-2" />
-                Antioch, CA
-              </p>
-              <a href="#" className="text-blue-500 hover:underline flex items-center">
-                Apply Now <FaArrowRight className="ml-2" />
-              </a>
-            </div>
+            {/* Job listings */}
+            {[
+              {
+                title: 'Home Care Aide',
+                description: 'We are seeking a compassionate Home Care Aide to provide exceptional care and support to our clients in their homes. Responsibilities include assisting with daily living activities, medication reminders, and providing emotional support.',
+                location: 'Antioch, CA',
+              },
+              {
+                title: 'Personal Care Assistant',
+                description: 'We are looking for a dedicated Personal Care Assistant to support our clients with their personal care needs. Duties include helping with grooming, bathing, and providing companionship.',
+                location: 'Antioch, CA',
+              },
+              {
+                title: 'Care Coordinator',
+                description: 'We are seeking a Care Coordinator to manage care plans and ensure our clients receive the highest quality of care. Responsibilities include coordinating care services, managing schedules, and communicating with clients and their families.',
+                location: 'Antioch, CA',
+              },
+              {
+                title: 'Administrative Assistant',
+                description: 'We are looking for an Administrative Assistant to support our office operations. Duties include handling communications, scheduling, and assisting with various administrative tasks.',
+                location: 'Antioch, CA',
+              }
+            ].map((job, index) => (
+              <div key={index} className="bg-gray-50 p-4 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">{job.title}</h3>
+                <p className="text-gray-600 mb-2">{job.description}</p>
+                <p className="text-gray-600 mb-2 flex items-center">
+                  <FaMapMarkerAlt className="w-5 h-5 text-green-500 mr-2" />
+                  {job.location}
+                </p>
+                <a href="#" className="text-blue-500 hover:underline flex items-center">
+                  Apply Now <FaArrowRight className="ml-2" />
+                </a>
+              </div>
+            ))}
           </div>
         </section>
 
