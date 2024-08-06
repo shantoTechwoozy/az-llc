@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
 
           {/* Section 1 */}
           <div className="lg:ml-2 border-b border-gray-100 py-8 lg:border-b-0 lg:border-r lg:py-16 lg:pe-16">
-            <div className="hidden text-teal-600 lg:block">
+            <div className="text-teal-600 lg:block">
               <Image
                 src="/footer/logo.png"
                 alt="logo"
