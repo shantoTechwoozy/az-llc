@@ -112,12 +112,13 @@ const Footer: React.FC = () => {
           {/* Section 3 - Map */}
           <div className="py-8 lg:py-16">
             <div className="relative w-full h-64 overflow-hidden rounded-lg">
-              <iframe
-                className="absolute inset-0 w-full h-full border-0"
-                src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE_HERE"
-                allowFullScreen
-                loading="lazy"
-              ></iframe>
+            <iframe
+  className="absolute inset-0 w-full h-full border-0"
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12695.078127012567!2d-121.8057907!3d38.0049252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808610b01040e3c1%3A0x469eae69b2387b06!2sAntioch%2C%20CA%2094509!5e0!3m2!1sen!2sus!4v1647994685166!5m2!1sen!2sus"
+  allowFullScreen
+  loading="lazy"
+></iframe>
+
             </div>
           </div>
         </div>
