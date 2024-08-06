@@ -53,10 +53,10 @@ const Footer: React.FC = () => {
               <div>
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Transportation to Medical Appointments </a>
+                    <a href="/appointment" className="text-gray-700 transition hover:opacity-75"> Transportation to Medical Appointments </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75">Assistance with Activities of Daily Living </a>
+                    <a href="/assistance" className="text-gray-700 transition hover:opacity-75">Assistance with Activities of Daily Living </a>
                   </li>
                 </ul>
               </div>

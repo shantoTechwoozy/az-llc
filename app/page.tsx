@@ -1,6 +1,6 @@
 import About from "@/components/about/page";
 import Announcement from "@/components/announcement/page";
-import ContactUs from "@/components/contact/page";
+import ContactUs from "@/app/(site)/contact/page";
 import GetStarted from "@/components/get-started/page";
 import Hero from "@/components/hero/page";
 import Introduction from "@/components/introduction/page";

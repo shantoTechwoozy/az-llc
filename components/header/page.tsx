@@ -33,13 +33,19 @@ const Header: React.FC = () => {
                   <a className="text-gray-700 transition hover:text-gray-900" href="/"> Home </a>
                 </li>
                 <li>
-                  <a className="text-gray-700 transition hover:text-gray-900" href="/services"> Services </a>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/aboutus"> About Us </a>
                 </li>
                 <li>
-                  <a className="text-gray-700 transition hover:text-gray-900" href="/projects"> Projects </a>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/service"> Services </a>
                 </li>
                 <li>
-                  <a className="text-gray-700 transition hover:text-gray-900" href="/contact"> Contact </a>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/career"> Careers </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/resource"> Resources </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-900" href="/contact"> Contact Us </a>
                 </li>
               </ul>
             </nav>
@@ -105,16 +111,22 @@ const Header: React.FC = () => {
         <nav aria-label="Mobile" className="mt-6">
           <ul className="space-y-4">
             <li>
-              <a className="text-gray-700 hover:text-gray-900" href="/"> Home </a>
+              <a className="text-gray-700 transition hover:text-gray-900" href="/"> Home </a>
             </li>
             <li>
-              <a className="text-gray-700 hover:text-gray-900" href="/services"> Services </a>
+              <a className="text-gray-700 transition hover:text-gray-900" href="/aboutus"> About Us </a>
             </li>
             <li>
-              <a className="text-gray-700 hover:text-gray-900" href="/projects"> Projects </a>
+              <a className="text-gray-700 transition hover:text-gray-900" href="/service"> Services </a>
             </li>
             <li>
-              <a className="text-gray-700 hover:text-gray-900" href="/contact"> Contact </a>
+              <a className="text-gray-700 transition hover:text-gray-900" href="/career"> Careers </a>
+            </li>
+            <li>
+              <a className="text-gray-700 transition hover:text-gray-900" href="/resource"> Resources </a>
+            </li>
+            <li>
+              <a className="text-gray-700 transition hover:text-gray-900" href="/contact"> Contact Us </a>
             </li>
             <li>
               <ClerkLoaded>
