@@ -94,7 +94,7 @@ const Assistance: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex items-center">
               <FaPhone className="w-6 h-6 text-blue-500 mr-3" />
-              <a href="tel:925-237-8403" className="text-blue-600 hover:underline">925-237-8403</a>
+              <a href="tel:+19255675766" className="text-blue-600 hover:underline">+19255675766</a>
             </div>
             <div className="flex items-center">
               <FaEnvelope className="w-6 h-6 text-blue-500 mr-3" />

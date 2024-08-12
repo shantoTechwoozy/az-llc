@@ -7,7 +7,7 @@ import Announcement from '@/components/announcement/page';
 const About: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      <Announcement/>
+      <Announcement />
       {/* Banner Section */}
       <div className="relative w-full h-64 md:h-80">
         <Image
@@ -92,7 +92,7 @@ const About: React.FC = () => {
             </p>
             <p className="text-lg text-gray-700 mb-4">
               <FaPhone className="inline-block w-6 h-6 text-blue-500 mr-2" />
-              Phone: <a href="tel:925-237-8403" className="text-blue-500 hover:underline">925-237-8403</a>
+              Phone: <a href="tel:+19255675766" className="text-blue-500 hover:underline">+19255675766</a>
             </p>
             <p className="text-lg text-gray-700 mb-4">
               <FaMapMarkerAlt className="inline-block w-6 h-6 text-blue-500 mr-2" />
