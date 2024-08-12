@@ -68,7 +68,7 @@ const Popup: React.FC = () => {
                             <div className="flex flex-col items-start">
                                 <div className="flex items-center mb-4">
                                     <FaPhone className="text-teal-500 mr-3" />
-                                    <span className="text-gray-700">Phone: 925-237-8403</span>
+                                    <span className="text-gray-700">Phone: +19255675766</span>
                                 </div>
                                 <div className="flex items-center mb-4">
                                     <FaEnvelope className="text-teal-500 mr-3" />

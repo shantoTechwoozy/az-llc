@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["'images.unsplash.com'","www.azcareservicesllc.com", "encrypted-tbn0.gstatic.com","images.unsplash.com","www.ophealthservices.com","voiceaustralia.community","static.wixstatic.com","qtxasset.com","www.access-healthcare.com" ],
+    remotePatterns: [
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: 'www.azcareservicesllc.com' },
+      { protocol: 'https', hostname: 'encrypted-tbn0.gstatic.com' },
+      { protocol: 'https', hostname: 'www.ophealthservices.com' },
+      { protocol: 'https', hostname: 'voiceaustralia.community' },
+      { protocol: 'https', hostname: 'static.wixstatic.com' },
+      { protocol: 'https', hostname: 'qtxasset.com' },
+      { protocol: 'https', hostname: 'www.access-healthcare.com' },
+    ],
   },
 };
 

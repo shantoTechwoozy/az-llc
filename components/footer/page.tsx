@@ -8,7 +8,6 @@ const Footer: React.FC = () => {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-3 gap-8">
 
-
           {/* Section 1 */}
           <div className="lg:ml-2 border-b border-gray-100 py-8 lg:border-b-0 lg:border-r lg:py-16 lg:pe-16">
             <div className="text-teal-600 lg:block">
@@ -91,7 +90,7 @@ const Footer: React.FC = () => {
               <div className="flex flex-col items-start mb-8">
                 <div className="flex items-center mb-4">
                   <FaPhone className="text-teal-500 mr-3" />
-                  <a href="tel:925-237-8403" className="text-gray-700 hover:text-teal-500">Call Us: 925-237-8403</a>
+                  <a href="tel:+19255675766" className="text-gray-700 hover:text-teal-500">Call Us: +19255675766</a>
                 </div>
                 <div className="flex items-center mb-4">
                   <FaEnvelope className="text-teal-500 mr-3" />
@@ -101,8 +100,8 @@ const Footer: React.FC = () => {
                   <Image
                     src="/footer/qrcode.png"
                     alt="QR Code"
-                    layout="fill"
-                    objectFit="contain"
+                    fill
+                    style={{ objectFit: 'contain' }}
                   />
                 </div>
               </div>
@@ -112,13 +111,12 @@ const Footer: React.FC = () => {
           {/* Section 3 - Map */}
           <div className="py-8 lg:py-16">
             <div className="relative w-full h-64 overflow-hidden rounded-lg">
-            <iframe
-  className="absolute inset-0 w-full h-full border-0"
-  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12695.078127012567!2d-121.8057907!3d38.0049252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808610b01040e3c1%3A0x469eae69b2387b06!2sAntioch%2C%20CA%2094509!5e0!3m2!1sen!2sus!4v1647994685166!5m2!1sen!2sus"
-  allowFullScreen
-  loading="lazy"
-></iframe>
-
+              <iframe
+                className="absolute inset-0 w-full h-full border-0"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12695.078127012567!2d-121.8057907!3d38.0049252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808610b01040e3c1%3A0x469eae69b2387b06!2sAntioch%2C%20CA%2094509!5e0!3m2!1sen!2sus!4v1647994685166!5m2!1sen!2sus"
+                allowFullScreen
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>

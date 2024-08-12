@@ -27,8 +27,8 @@ const Service: React.FC = () => {
                             <Image
                                 src={card.imagePath}
                                 alt={card.title}
-                                layout="fill"
-                                objectFit="cover"
+                                fill
+                                style={{ objectFit: 'cover' }}
                                 className="w-full h-full"
                             />
                         </div>

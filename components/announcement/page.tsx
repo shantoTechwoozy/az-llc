@@ -9,7 +9,7 @@ export default function Announcement({ }: Props) {
             <div className="justify-between whitespace-nowrap animate-marquee flex items-center text-glow">
                 <div className="flex items-center mr-8">
                     <FaPhoneAlt className="mr-2" />
-                    <p className="font-light text-lg">Got Questions?&nbsp;&nbsp; Call Us Now: 925-237-8403&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <p className="font-light text-lg">Got Questions?&nbsp;&nbsp; Call Us Now: +19255675766&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     <FaEnvelope className="mr-2" />
                     <p className="font-light text-lg">&nbsp;&nbsp;Message Us: info@azcareservicesllc.com&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     <FaMapMarkerAlt className="mr-2" />

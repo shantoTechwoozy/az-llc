@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import Image from 'next/image';
 
@@ -12,8 +13,8 @@ const HeroSection = () => {
                     <Image
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUcZYKLBtubNFAbUuhzhLX1dM4GJQyZk2hNg&s"
                         alt="Background image with a blur effect"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: 'cover' }}
                         className="absolute inset-0 object-cover blur-md opacity-70" // Apply blur effect
                     />
                 </div>
@@ -34,7 +35,7 @@ const HeroSection = () => {
 
             {/* Text Content */}
             <div className="relative p-8 md:p-12 lg:px-16 lg:py-24 flex items-center z-10">
-                <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                <div className="mx-auto max-w-xl text-center sm:text-left rtl:sm:text-right">
                     <h3 className='text-md font-bold text-left'>INTRODUCING</h3>
                     <h1 className="text-4xl mt-5 text-left font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-blue-500 to-blue-600">
                         AZ Transportation and Care Services LLC
